@@ -1,0 +1,16 @@
+{% extends 'mainapp/base.html' %}
+
+{% block content %}
+    <h1>Список групп 3-го курса</h1>
+    <div class="menu">
+        <ul>
+            {% for categories in categories %}
+                 <li>
+                    <a href="{% url 'students_page' categories.pk %}">{{ categories }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}

@@ -14,3 +14,6 @@ class Student(models.Model):
                                  on_delete=models.CASCADE)
     name = models.IntegerField('Количество студентов', default=0)
 
+    class Meta:
+        verbose_name = 'Студент'
+        verbose_name_plural = 'Студенты'

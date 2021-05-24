@@ -16,7 +16,7 @@ def students(request):
     return render(request, 'mainapp/students.html', context)
 
 
-def student_page(request, pk):
+def students_page(request, pk):
    items = Student.objects.filter(category_id=pk)
    context = {
        'items': items,

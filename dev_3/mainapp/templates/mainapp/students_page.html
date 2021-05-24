@@ -2,15 +2,8 @@
 
 {% block content %}
     <h1>Количество студентов</h1>
-    <div class="menu">
-        <ul>
-            {% for items in categories %}
-                 <li>
-                    <a href="#">{{ items }}
-                    </a>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
-
+    <p class="number-student">
+        {{ student.name }}
+    </p>
+{% endfor %}
 {% endblock %}
